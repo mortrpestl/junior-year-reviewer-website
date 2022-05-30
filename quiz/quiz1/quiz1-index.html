@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grade 9 Lessons Refresher Quiz: Part 1">
+    <meta name="keywords" content="Computer Science, CS">
+    <meta name="author" content="RandomPersonQ">
+    <title>Computer Science: G9 Refresher Quiz Part 1</title>
+
+    <link rel="stylesheet" href="quiz1-styles.css">
+</head>
+
+<body onunload = "progressSaverOnunload()" onload = "progressSaverOnload(), submittedCheckerFunction()">
+    <!-- Hey, just a heads-up, most of my documentation is in the JS part of each webpage. This is because it is the most important and hardest part to understand. The parts in the HTML and CSS page is self-explanatory and only some parts required further elaboration in my opinion. -->
+    <div id="leftFiller"></div>
+    <div id="rightFiller"><div class = "navigationRight"><a href = "../quiz2/quiz2-index.html">❱❱</a></div></div>
+
+    <div id="boxmodel">
+        <div id="submittedChecker">STATUS: UNSUBMITTED -- please submit with the "Submit" button below</div>
+        <header>&gt;&gt;&gt; COMPUTER SCIENCE &lt;&lt;&lt;</header>
+
+        <div id="title">G9 Refresher Quiz Part 1: A Collection of Lessons in Web Paging</div>
+
+        <!-- "Form Methods Used in this Section" part -->
+        <div id="fmuitsContainer">
+            <div id="fmuits1">Form Methods Used in this Section</div>
+            <div id="fmuits2">Text, Radios, Checkboxes</div>
+        </div>
+
+        <!-- start of questions -->
+        <!-- Question 1 -->
+        <div id="q1header">Question 1</div>
+        <div id="q1content">
+            <p>Throughout the quarters, we were discussed the basics of web paging. CSS was our central topic for the
+                first and second quarters, and it tackles design elements and formatting of a web page.</p>
+            <p>CSS is an <span>abbreviation of what word / words?</span> Capitalize the starting letters of the
+                abbreviations (for example: <span>JS - JavaScript)</span></p>
+
+            <form name = "form">
+                <label for="t1q1_answer">Your answer is: </label>
+                <input type="text" id="t1q1_answer" 
+                oninput="textFormatRestoreFunction(this)" 
+                onblur="textValidationFunction(this)"
+                />
+            </form>
+
+        </div>
+
+        <!-- Question 2 -->
+        <div id="q2header">Question 2</div>
+        <div id="q2content">
+            <p>Loops are very fun but sometimes confusing elements for us to utilize. It was first introduced during our
+                Grade 8 lessons for C++, and was expanded in the last two (2) quarters of this grade. </p>
+            <p>What type of loop <span>runs only when a condition is true </span> BUT <span>runs once when the page is
+                    loaded, </span>no matter the value of the condition?</p>
+
+            <form name = "form">
+                <input type="radio" class = "novisible" id="q2noInputSelected" name="t1q2_answer" value="0" checked />
+                <input type="radio" name="t1q2_answer" value="For Loop" />For Loop<br>
+                <input type="radio" name="t1q2_answer" value="While Loop" />While Loop<br>
+                <input type="radio" name="t1q2_answer" value="Do While Loop" />Do While Loop<br>
+                <input type="radio" name="t1q2_answer" value="For In Loop" />For In Loop<br>
+            </form>
+        </div>
+
+        <!-- Question 3 -->
+        <div id="q3header">Question 3</div>
+        <div id="q3content">
+            <p>There are many built-in functions In JavaScript. In fact, in order to create this quiz, I had to use some of them! You can still create custom ones through various techniques, but built-in functions are very helpful for programmers like us.</p>
+            <p>What built-in function performs <span>various techniques on numbers </span>such as getting the maximum number possible, getting the value of PI, or rounding off numbers?</p>
+            <p> The formatting of the answer is "&lt;Builtinfunctionname&gt;()" without the quotation marks. For example, <span> Word()</span>.</p>
+
+            <form name = "form">
+                <label for="t1q3_answer">Your answer is: </label>
+                <input type="text" id="t1q3_answer" 
+                oninput="textFormatRestoreFunction(this)" 
+                onblur="textValidationFunction(this)" />
+            </form>
+
+        </div>
+
+        <!-- Question 4 -->
+        <div id="q4header">Question 4</div>
+        <div id="q4content">
+            <p>In our early third quarter days, we were taught various techniques in writing text to the browser using
+            JavaScript. Select <span>all</span> the techniques below that can be used to apply text to the browser, and <span>actually work when copy-pasted into an IDE. </span></p>
+
+            <form name = "form">
+                <input type="checkbox" id="document.write()" name="t1q4_answer" value="document.write()"  />document.write()<br>
+                <input type="checkbox" id="alert()" name="t1q4_answer" value="alert()" />alert()<br>
+                <input type="checkbox" id="console.logs()" name="t1q4_answer" value="console.logs()" />console.logs()<br>
+                <input type="checkbox" id="document.getElementById().InnerHTML" name="t1q4_answer"
+                    value="document.getElementById().InnerHTML" />document.getElementById().InnerHTML<br>
+            </form>
+        </div>
+
+        <!-- Question 5 -->
+        <div id="q5header">Question 5</div>
+        <div id="q5content">
+            <p><span>TRUE OR FALSE</span>: Two different items in JavaScript <span>can have the same ID,</span> but they will not work properly.</p>
+
+            <form name = "form">
+                <input type="radio" class = "novisible" id="q5noInputSelected" name="t1q5_answer" value="0" checked />
+                <input type="radio" id="t1q5_true" name="t1q5_answer" value="true" />True<br>
+                <input type="radio" id="t1q5_false" name="t1q5_answer" value="false" />False<br>
+            </form>
+        </div>
+        <!-- end of questions for Quiz 1 -->
+
+        <div id="submitreset">
+            <form 
+            action = "../quiz2/quiz2-index.html"
+            onsubmit = "return submitFunction()"
+            onreset = "return resetFunction()"
+            >
+                <div id = "dataContainer"><input type = "submit" value = "Finish Part 1" /></div>
+                <div id = "dataContainer"><input type = "reset" value = "Reset Part 1" /></div>
+            </form>
+        </div>
+        
+        <div id="navigationPage">
+            <form action="../submissionPage/unsubmittedChecker.html">
+                <div id="dataContainer"><input type="submit" value="Go to Submission Page (submit entire quiz)" /></div>
+            </form>
+        </div>
+        
+        <div id="copyright">Webpage of RandomPersonQ, constructed April 21, 2022 (c)</div>
+    </div>
+
+    <script src="quiz1-script.js"></script>
+</body>
+
+</html>

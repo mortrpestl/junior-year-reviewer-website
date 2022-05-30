@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grade 9 Lessons Refresher Quiz: Part 2">
+    <meta name="keywords" content="Chemistry, Chem, Science">
+    <meta name="author" content="RandomPersonQ">
+    <title>Chemistry: G9 Refresher Quiz Part 2</title>
+
+    <link rel="stylesheet" href="quiz2-styles.css">
+</head>
+
+<body onunload="progressSaverOnunload()" onload="poteToggle(), progressSaverOnload(), submittedCheckerFunction()">
+    <!-- Hey, just a heads-up, most of my documentation is in the JS part of each webpage. This is because it is the most important and hardest part to understand. The parts in the HTML and CSS page is self-explanatory and only some parts required further elaboration in my opinion. -->
+    <div id="leftFiller"><div class = "navigationLeft"><a href = "../quiz1/quiz1-index.html">❰❰</a></div></div>
+    <div id="rightFiller"><div class = "navigationRight"><a href = "../quiz3/quiz3-index.html">❱❱</a></div></div>
+
+    <div id="boxmodel">
+        <div id="submittedChecker">STATUS: UNSUBMITTED -- please submit with the "Submit" button below</div>
+        <header>--- CHEMISTRY ---</header>
+
+        <div id="title">G9 Refresher Quiz Part 2: Atoms, Molecules, VSEPR Theories, and A Whole Lot about the Inorganic
+        World</div>
+
+        <!-- "Form Methods Used in this Section" part -->
+        <div id="fmuitsContainer">
+            <div id="fmuits1">Form Methods Used in this Section</div>
+            <div id="fmuits2">Text, Radios, Selections</div>
+        </div>
+
+        <div id="pote">
+            <div id="poteHeader">
+                Periodic Table of Elements -- open/close me -><input type="checkbox" id="poteCheckbox" onclick="poteToggle(this)" />
+            </div>
+            <div id="poteContent">
+                <img src="https://sciencenotes.org/wp-content/uploads/2015/09/MutedPeriodicTable.png">
+            </div>
+        </div>
+
+        <!-- start of questions -->
+        <!-- Question 1 -->
+        <div id="q1header">Question 1</div>
+        <div id="q1content">
+            <p>In the first quarter, we were taught one of the basics of chemistry -- <span>nomenclature</span>. We were also taught how to reverse these nomenclatures and write down the formulas of these compounds from these words. There were also some specific formulas that we were told to memorize such as the <span>polyatomic ions</span>, for example the compounds <span>ammonia - NH<sub>3</sub></span> and <span>dichromate - Cr<sub>2</sub>O<sub>7</sub><sup>-2</sup></span>.</p>
+            <p>Use the techniques that were taught to you during the 1st quarter and write down the name of the compound <span>Pb(ClO<sub>2</sub>)<sub>4</sub></span>.</p>
+
+            <form name="form">
+                <label for="t2q1_answer">Your answer is: </label>
+                <input type="text" id="t2q1_answer" oninput="textFormatRestoreFunction(this)"
+                    onblur="textValidationFunction(this)" />
+            </form>
+        </div>
+
+        <!-- Question 2 -->
+        <div id="q2header">Question 2</div>
+        <div id="q2content">
+            <p>Personally, one of the easiest and most fun parts of Chemistry this year is <span>gas laws</span>. This is mostly because of the equation part, but some of the theoretical parts are cool too. My most favorite gas law equation is the <span>ideal gas law equation</span>, also known as <span>Pv = nRT</span>, because you can manipulate it to solve many gas variables.</p>
+            <p>Find the volume of <span>420 moles</span> of a gas at <span>-204.15 degrees Celsius</span> and <span>2.5 atm</span>, rounded to the nearest tenth.</p>
+
+            <form name="form">
+                <input type="radio" class="novisible" id="q2noInputSelected" name="t2q2_answer" value="0" checked />
+                <input type="radio" name="t2q2_answer" value="5.7 L" />5.7 L<br>
+                <input type="radio" name="t2q2_answer" value="34.5 L" />34.5 L<br>
+                <input type="radio" name="t2q2_answer" value="951.2 L" />951.2 L<br>
+                <input type="radio" name="t2q2_answer" value="2378.0 L" />2378.0 L<br>
+            </form>
+        </div>
+
+        <!-- Question 3 -->
+        <div id="q3header">Question 3</div>
+        <div id="q3content">
+            <p>Second quarter was a pretty forgettable quarter for the subject of Chemistry, but it is <span>really important</span> because it discusses many of the topics that will come to be important in the future -- from <span>periodic trends</span> and <span>molecular geometries</span>, to <span>electron configurations</span> and <span>quantum numbers</span>.</p>
+            <p>Find the <span>molecular geometry</span>, <span>electron-domain geometry</span>, and <span>hybridization</span> of a compound composed of one atom with the electron configuration of <span>[Ne] 3s<sup>2</sup> 3p<sup>2</sup></span> and two atoms with the electron configuration of <span>[He] 2s<sup>2</sup> 2p<sup>4</sup></span>.</p>
+            <p>Positivity Note: Don't worry, each correct answer in this question is worth 0.33 points. Plus, I just made it look complicated even if it isn't.</p>
+
+            <form name="form">
+                <div id="dataContainer"><label for = "t2q3_answer_1">The molecular geometry of this compound is: </label></div>
+                <div id="dataContainer"><select id="t2q3_answer_1">
+                    <option name="q3NoInputSelected" value="-1" selected></option>
+                    <option name="t2q3_answer" value="MG: Linear">Linear</option>
+                    <option name="t2q3_answer" value="MG: Bent">Bent</option>
+                    <option name="t2q3_answer" value="MG: Trigonal Planar">Trigonal Planar</option>
+                    <option name="t2q3_answer" value="MG: Trigonal Pyramidal">Trigonal Pyramidal</option>
+                    <option name="t2q3_answer" value="MG: Trigonal Bipyramidal">Trigonal Bipyramidal</option>
+                    <option name="t2q3_answer" value="MG: Square Planar">Square Planar</option>
+                    <option name="t2q3_answer" value="MG: Square Pyramidal">Square Pyramidal</option>
+                    <option name="t2q3_answer" value="MG: Seesaw">Seesaw</option>
+                    <option name="t2q3_answer" value="MG: Octahedral">Octahedral</option>
+                </select></div>
+
+                <div id="dataContainer"><label for = "t2q3_answer_2">The electron-domain geometry of this compound is: </label></div>
+                <div id="dataContainer"><select id="t2q3_answer_2">
+                    <option name="q3NoInputSelected" value="-1" selected></option>
+                    <option name="t2q3_answer" value="EMG: Linear">Linear</option>
+                    <option name="t2q3_answer" value="EMG: Trigonal Planar">Trigonal Planar</option>
+                    <option name="t2q3_answer" value="EMG: Tetrahedral">Tetrahedral</option>
+                    <option name="t2q3_answer" value="EMG: Trigonal Bipyramidal">Trigonal Bipyramidal</option>
+                    <option name="t2q3_answer" value="EMG: Octahedral">Octahedral</option>
+                    
+                </select></div>
+                
+                <div id="dataContainer"><label for = "t2q3_answer_3">The hybridization of this compound is: </label></div>
+                <div id="dataContainer"><select id="t2q3_answer_3">
+                    <option name="q3NoInputSelected" value="-1" selected></option>
+                    <option name="t2q3_answer" value="H: sp">sp</option>
+                    <option name="t2q3_answer" value="H: sp2">sp2</option>
+                    <option name="t2q3_answer" value="H: sp3">sp3</option>
+                    <option name="t2q3_answer" value="H: sp3d">sp3d</option>
+                    <option name="t2q3_answer" value="H: sp3d2">sp3d2</option>
+                </select></div>
+            </form>
+
+        </div>
+
+        <!-- Question 4 -->
+        <div id="q4header">Question 4</div>
+        <div id="q4content">
+            <p>Here's an easy question for you after three seemingly hard questions you hopefully got correct.</p>
+            <p>The third quarter didn't just feature gas laws -- it also features the <span>properties of solids and liquids</span> under certain situations, and <span>phase changes and the heating and cooling curve.</span> I treated these lessons as a break from the mathematical approach in gas laws during that time.</p>
+            <p>What do we call the x and y value on the phase diagram that determines when the compound being referred to in the diagram becomes <span>solid, liquid, and gas at the same time</span>.</p>
+            <form name="form">
+                <input type="radio" class="novisible" id="q4noInputSelected" name="t2q4_answer" value="0" checked />
+                <input type="radio" name="t2q4_answer" value="Standard Pressure and Temperature" />Standard Pressure and Temperature<br>
+                <input type="radio" name="t2q4_answer" value="Triple Point" />Triple Point<br>
+                <input type="radio" name="t2q4_answer" value="Critical Point" />Critical Point<br>
+                <input type="radio" name="t2q4_answer" value="Supercooling Point" />Supercooling Point<br>
+            </form>
+        </div>
+
+        <!-- Question 5 -->
+        <div id="q5header">Question 5</div>
+        <div id="q5content">
+            <p>The fourth quarter was quite a short one. Nevertheless, we learned a lot of interesting stuff such as <span>solutions and its properties</span> and other optional ones such as <span>nuclear chemistry</span>. For this question, write down the reason why CCl4 does not dissolve in water, but dissolves in oil <span>aside from the IMFs</span>.</p>
+            <p>Hint: it has something to do with the <span>electronegativities</span> of the solutes and solvents in the solution.</p>
+            <form name="form">
+                <label for="t2q5_answer">Your answer is: </label>
+                <input type="text" id="t2q5_answer" oninput="textFormatRestoreFunction(this)"
+                    onblur="textValidationFunction(this)" />
+            </form>
+        </div>
+        <!-- end of questions for Quiz 1 -->
+        <div id="submitreset">
+            <form action="../quiz3/quiz3-index.html" onsubmit="return submitFunction()"
+                onreset="return resetFunction()">
+                <div id="dataContainer"><input type="submit" value="Finish Part 2" /></div>
+                <div id="dataContainer"><input type="reset" value="Reset Part 2" /></div>
+            </form>
+        </div>
+
+        <div id="navigationPage">
+            <form action="../submissionPage/unsubmittedChecker.html">
+                <div id="dataContainer"><input type="submit" value="Go to Submission Page (submit entire quiz)" /></div>
+            </form>
+        </div>
+
+        <div id="copyright">Webpage of RandomPersonQ, constructed April 22-24, 2022 (c)</div>
+    </div>
+
+    <script src="quiz2-script.js"></script>
+</body>
+
+</html>

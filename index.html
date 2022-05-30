@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grade 9 Lessons Refresher Quiz">
+    <meta name="keywords" content="Instructions, Question Formatting, and Registration Page">
+    <meta name="author" content="RandomPersonQ">
+    <title>G9 Lesson Refresher Quiz (Briefing & Registration)</title>
+
+    <link rel="stylesheet" href="index/index-styles.css">
+</head>
+
+<body>
+    <!-- Hey, just a heads-up, most of my documentation is in the JS part of each webpage. This is because it is the most important and hardest part to understand. The parts in the HTML and CSS page is self-explanatory and only some parts required further elaboration in my opinion. -->
+    <div id="leftFiller"></div>
+    <div id="rightFiller"></div>
+
+    <div id="boxmodel">
+        
+        <header>&gt;&gt;&gt; Grade 9 Lessons Refresher Quiz &lt;&lt;&lt;</header>
+
+        <div id="title">Instructions, Question Formatting, and Registration Page</div>
+
+        <!-- Instructions part of website -->
+        <div id="instructionsHeader">Instructions and Briefing</div>
+        <div id="instructionsContent">
+            <ol>
+                <li>The quiz assumes that you know <span>bits of knowledge</span> from every subject that you studied this year (Grade 9).
+                </li>
+                <li>There are <span>5 questions for 4 selected subjects</span> in this school year, and <span>1 from 5 random subjects</span>, totalling to a number of 30 questions for the entire quiz.
+                </li>
+                <li>They will consist of <span>identification questions, checkbox questions, multiple choice questions, and more</span>. There are <span>no essays</span> for easy computer checking. Text inputs must be typed in <span>"Capitalize Each Word"</span> form.</li>
+                <li>Checkboxes have a really cool property -- you can select <span>NONE of them because they are graded right minus wrong</span>, and some questions are <span>designed to have NO correct answer</span>.
+                <li>Your answers <span>save</span>. Do not worry if you disconnect, because your <span>your data will still be there</span> once you reconnect!
+                </li>
+                <li>You can use the <span>arrows in the left and right sides of the quiz</span> in order to navigate through the quiz (you will see them later). <span>Do not forget to submit each part </span> of the quiz though, or you might get <span>zeroes</span> for that specific part of the quiz.
+                </li>
+                <li>Have fun, because you will have a very great time (if you did well or mediocre this school year)! </li>
+            </ol>
+        </div>
+
+        <!-- Question Formatting part of website -->
+        <div id="questionFormatHeader"> Question Formatting </div>
+        <div id="questionFormatContent">
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th># of Qs</th>
+                    <th>Difficulty</th>
+                    <th>Subject Description</th>
+                </tr>
+                <tr id="lightbrown">
+                    <td>Computer Science</td>
+                    <td>5</td>
+                    <td>Easy</td>
+                    <td>The subject that deals with information technology. Expect the three front-end elements (HTML, CSS, JS) to be discussed here.</td>
+                </tr>
+                <tr id="lightgray">
+                    <td>Chemistry</td>
+                    <td>5</td>
+                    <td>Hard</td>
+                    <td>From the three states of matter to the various properties of molecules in atoms, expect this subject to be diverse and difficult.</td>
+                </tr>
+                
+                <tr id="lightbrown">
+                    <td>Physics</td>
+                    <td>5</td>
+                    <td>Difficult</td>
+                    <td>This subject tackles the physical world and how it works. Expect easy topics such as torque and rotational inertia to hard topics such as kinematics and projectile motion.</td>
+                </tr>
+                <tr id="lightgray">
+                    <td>Math</td>
+                    <td>5</td>
+                    <td>Hard</td>
+                    <td>Expect function properties, logarithmic equations, sequences, and more in this very important subject of any aspect of our lives.</td>
+                </tr>
+                <tr id="lightbrown">
+                    <td>Random Subjects</td>
+                    <td>5</td>
+                    <td>Medium</td>
+                    <td>Expect history, biology, and more in this random array of varying difficulty.</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Registration part of website -->
+        <div id="registrationHeader">Registration</div>
+        <div id="registrationContent">
+            <p>If you're up for the challenge (or if you're one of the people who are going to review my website), then
+                register below! By pressing submit, you will be sent to the quiz after the "confirm" pop-up. Be
+                prepared,
+                and good luck! </p>
+
+            <form 
+            action = "quiz/quiz1/quiz1-index.html" 
+            method = "get"
+            onsubmit = "return submitFunction()"
+            onreset = "return resetFunction()">
+                <div id="dataContainer"><label for="nameId">Name / Codename:</label><br>
+                    <input type="text" id="nameId" 
+                    placeholder="Your name here"
+                    oninput="textFormatRestoreFunction(this)" 
+                    onblur="textValidationFunction(this)" /
+                    ><br>
+                </div>
+                <div id="dataContainer"><label for="dateId">Date of Submission</label><br>
+                    <input type="date" id="dateId" value="" disabled /><br>
+                </div>
+                <div id="dataContainer">
+                    <input type="submit" />
+                </div>
+                <div id="dataContainer">
+                    <input type="reset" />
+                </div>
+                   
+                <br>
+
+
+
+            </form>
+        </div>
+        <div id="copyright">Webpage of RandomPersonQ, constructed April 20, 2022 (c)</div>      
+    </div>
+
+    <script src = "index/index-script.js"></script>
+</body>
+
+</html>

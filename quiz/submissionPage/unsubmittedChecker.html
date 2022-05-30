@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grade 9 Lessons Refresher Quiz: Submission Page">
+    <meta name="keywords" content="Submission Page">
+    <meta name="author" content="RandomPersonQ">
+    <title>Submission Page: G9 Refresher Quiz</title>
+
+    <link rel="stylesheet" href="unsubmittedChecker-styles.css">
+</head>
+
+<body>
+    <!-- Hey, just a heads-up, most of my documentation is in the JS part of each webpage. This is because it is the most important and hardest part to understand. The parts in the HTML and CSS page is self-explanatory and only some parts required further elaboration in my opinion. -->
+    <div id="leftFiller"></div>
+    <div id="rightFiller"></div>
+
+    <div id="boxmodel">
+        <header>SUBMISSION PAGE</header>
+
+        <div id="title">The Part of the Quiz where you Finish your Attempt</div>
+
+        <!-- "Form Methods Used in this Section" part -->
+        <div id="fmuitsContainer">
+            <div id="fmuits1">4th Quarter Methods Used</div>
+            <div id="fmuits2">localStorage, DOM Manipulation</div>
+        </div>
+
+        <!-- start of questions -->
+        <!-- Question 1 -->
+        <div id="q1header">Quiz 1: Computer Science</div>
+        <div id="q1content">
+        </div>
+
+        <!-- Question 2 -->
+        <div id="q2header">Quiz 2: Chemistry</div>
+        <div id="q2content">
+        </div>
+
+        <!-- Question 3 -->
+        <div id="q3header">Quiz 3: Physics</div>
+        <div id="q3content">
+        </div>
+
+        <!-- Question 4 -->
+        <div id="q4header">Quiz 4: Mathematics</div>
+        <div id="q4content">
+        </div>
+
+        <!-- Question 5 -->
+        <div id="q5header">Quiz 5: Random Subjects</div>
+        <div id="q5content">
+        </div>
+
+        <!-- end of questions for Quiz 1 -->
+
+        <div id="navigationPage">
+            <form action="../../results/results.html" onsubmit="return submitFunction()">
+                <div id="dataContainer"><input type="button" onclick="backToQuiz()" value="Return to Quiz" /></div>
+                <div id="dataContainer"><input type="submit" value="Finish attempt (results page)" /></div>
+            </form>
+        </div>
+
+        <div id="copyright">Webpage of RandomPersonQ, constructed May 4, 2022 (c)</div>
+    </div>
+
+    <script src="unsubmittedChecker-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+#leftFiller{
+    position: fixed;
+    height: 100%;
+    width: 9%;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    background: linear-gradient(rgb(66, 72, 135), rgb(32, 59, 83));
+    box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.5);
+}
+
+#rightFiller{
+    position: fixed;
+    height: 100%;
+    width: 9%;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    background: linear-gradient(rgb(66, 72, 135), rgb(32, 59, 83));
+    box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.5);
+}
+
+span{
+    color: rgb(68, 93, 130);
+}
+
+body{
+    background-color: rgb(158, 168, 184);
+}
+
+#boxmodel {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    font-size: large;
+    font-weight: bold;
+    font-family: monospace;
+    color: rgb(241, 231, 231);
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(58, 36, 126);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+
+#title {
+    font-size: medium;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(215, 230, 207);
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(78, 78, 154);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#scoreHeader{
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: rgb(116, 98, 188);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#scoreContent {
+    text-align: center;
+    background-color: rgb(249, 246, 246);
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#score {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#rankingHeader{
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: rgb(116, 98, 188);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#rankingContent {
+    text-align: center;
+    background-color: rgb(249, 246, 246);
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+#tryAgainHeader{
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: rgb(116, 98, 188);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#tryAgainContent{
+    text-align: justify;
+    text-indent: 2%;
+    background-color: rgb(249, 246, 246);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#tryAgainContent form {
+    display: grid;
+}
+
+#tryAgainContent form input{
+    margin: auto;
+}
+
+#copyright{
+    color: rgb(201, 205, 222);
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(77, 73, 129);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    
+}

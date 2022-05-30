@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+#submittedChecker {
+    font-size: large;
+    text-align: center;
+    color: red;
+}
+
+.novisible {
+    display: none;
+    position: absolute;
+}
+
+#leftFiller {
+    /* basically the left side of the quiz */
+    position: fixed;
+    height: 100%;
+    width: 9%;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    background: linear-gradient(to right, rgb(28, 78, 125), rgb(203, 204, 216));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rightFiller {
+    /* basically the right side of the quiz */
+    position: fixed;
+    height: 100%;
+    width: 9%;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, rgb(28, 78, 125), rgb(203, 204, 216));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navigationLeft {
+    background-color: rgb(103, 105, 184);
+    border: 2px rgb(167, 173, 229) solid;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.navigationLeft a{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    font-size: 300%;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navigationLeft:hover{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    background-color: rgb(92, 73, 176);
+}
+
+.navigationLeft:hover a{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    color: rgb(223, 213, 213);
+    font-size: 330%;
+    transition: ease 0.25s;
+}
+
+.navigationRight {
+    background-color: rgb(103, 105, 184);
+    border: 2px rgb(167, 173, 229) solid;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.navigationRight a{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    font-size: 300%;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navigationRight:hover{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    background-color: rgb(92, 73, 176);
+}
+
+.navigationRight:hover a{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    color: rgb(223, 213, 213);
+    font-size: 330%;
+    transition: ease 0.25s;
+}
+
+span {
+    /* turns <span>ed tags to a dark green shade */
+    color: rgb(60, 79, 143);
+}
+
+body {
+    background: rgb(203, 204, 216);
+}
+
+#boxmodel {
+    /* text aspect of body */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* physical aspect of body */
+    background-color: transparent;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    /* text aspect of header */
+    font-size: large;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+    /* physical aspect of header */
+    border-radius: 15px;
+    background: rgb(36, 56, 121);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+#title {
+    /* text aspect of title */
+    font-size: medium;
+    font-family: monospace;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+    /* physical aspect of title */
+    border-radius: 15px;
+    background: rgb(76, 109, 158);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#fmuitsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 15px;
+}
+
+#fmuits1 {
+    /* text aspect of "form methods used" header */
+    text-align: center;
+    font-weight: bold;
+    color: rgb(245, 245, 245);
+    /* physical aspect of "form methods used" header */
+    background-color: rgb(116, 73, 184);
+    padding: 5px;
+}
+
+#fmuits2 {
+    /* text aspect of "form methods used" box */
+    text-align: center;
+    font-weight: bold;
+    color: rgb(116, 73, 184);
+    /* physical aspect of "form methods used" box */
+    background-color: rgb(245, 245, 245);
+    padding: 5px;
+    align-items: center;
+}
+
+#q1header {
+    /* text aspect of question one header */
+    text-indent: 2%;
+    font-weight: bold;
+    color: white;
+    /* physical aspect of question one header */
+    background: linear-gradient(to right, rgb(192, 13, 111),rgb(146, 16, 87));
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#q1content {
+    /* text aspect of question one content */
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    /* physical aspect of question one content */
+    text-indent: 2%;
+    background: rgb(249, 240, 240);
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#q1content input {
+    margin-left: 1%;
+    width: 40%;
+}
+
+#q2header {
+    /* text aspect of question two header */
+    text-indent: 2%;
+    font-weight: bold;
+    color: white;
+    /* physical aspect of question two header */
+    background: linear-gradient(to right, rgb(192, 13, 111),rgb(146, 16, 87));
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#q2content {
+    /* text aspect of question two content */
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    /* physical aspect of question two content */
+    text-indent: 2%;
+    background: rgb(249, 240, 240);
+    padding: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#q2content form {
+    text-indent: 0;
+}
+
+#q2content form input {
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+#q3header {
+    /* text aspect of question two header */
+    text-indent: 2%;
+    font-weight: bold;
+    color: white;
+    /* physical aspect of question two header */
+    background: linear-gradient(to right, rgb(192, 13, 111),rgb(146, 16, 87));
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#q3content {
+    /* text aspect of question two content */
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    /* physical aspect of question two content */
+    text-indent: 2%;
+    background: rgb(249, 240, 240);
+    padding: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#q3content form {
+    text-indent: 0;
+}
+
+#q3content form input {
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+#q4header {
+    /* text aspect of question five header */
+    text-indent: 2%;
+    font-weight: bold;
+    color: white;
+    /* physical aspect of question five header */
+    background: linear-gradient(to right, rgb(192, 13, 111),rgb(146, 16, 87));
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#q4content {
+    /* text aspect of question five content */
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    /* physical aspect of question five content */
+    text-indent: 2%;
+    background: rgb(29,41,35);
+    background: rgb(249, 240, 240);
+    padding: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#q4content input {
+    margin-left: 1%;
+    width: 40%;
+}
+
+#q5header {
+    /* text aspect of question five header */
+    text-indent: 2%;
+    font-weight: bold;
+    color: white;
+    /* physical aspect of question five header */
+    background: linear-gradient(to right, rgb(192, 13, 111),rgb(146, 16, 87));
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#q5content {
+    /* text aspect of question five content */
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    /* physical aspect of question five content */
+    text-indent: 2%;
+    background: rgb(29,41,35);
+    background: rgb(249, 240, 240);
+    padding: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#q5content input {
+    margin-left: 1%;
+    width: 40%;
+}
+
+#submitreset form {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+#submitreset form input {
+    color: rgb(29, 64, 87);
+    font-family: monospace;
+    width: 80%;
+    border: 1px rgb(16, 11, 93) solid;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+#submitreset form input:hover {
+    background-color: rgb(213, 209, 225);
+}
+
+#navigationPage form {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+#navigationPage form input {
+    color: rgb(29, 64, 87);
+    font-family: monospace;
+    width: 60%;
+    border: 1px rgb(16, 11, 93) solid;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+#navigationPage form input:hover {
+    background-color: rgb(213, 209, 225);
+}
+
+#copyright {
+    /* text aspect of copyright */
+    color: whitesmoke;
+    text-align: center;
+    /* physical aspect of copyright */
+    border-radius: 15px;
+    background-color: rgb(50, 72, 142);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+
+}

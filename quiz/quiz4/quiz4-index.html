@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grade 9 Lessons Refresher Quiz: Part 4">
+    <meta name="keywords" content="Math, Mathematics, Part 4">
+    <meta name="author" content="RandomPersonQ">
+    <title>Mathematics: G9 Refresher Quiz Part 4</title>
+
+    <link rel="stylesheet" href="quiz4-styles.css">
+</head>
+
+<body onunload="progressSaverOnunload()" onload="progressSaverOnload(), submittedCheckerFunction()">
+    <!-- Hey, just a heads-up, most of my documentation is in the JS part of each webpage. This is because it is the most important and hardest part to understand. The parts in the HTML and CSS page is self-explanatory and only some parts required further elaboration in my opinion. -->
+    <div id="leftFiller"><div class = "navigationLeft"><a href = "../quiz3/quiz3-index.html">❰❰</a></div></div>
+    <div id="rightFiller"><div class = "navigationRight"><a href = "../quiz5/quiz5-index.html">❱❱</a></div></div>
+
+    <div id="boxmodel">
+        <div id="submittedChecker">STATUS: UNSUBMITTED -- please submit with the "Submit" button below</div>
+        <header>MATHEMATICS</header>
+
+        <div id="title">G9 Refresher Quiz Part 4: Pre-Precalculus and Functions, New Algebraic Techniques, Sequences, and Transformation Madness</div>
+
+        <!-- "Form Methods Used in this Section" part -->
+        <div id="fmuitsContainer">
+            <div id="fmuits1">Form Methods Used in this Section</div>
+            <div id="fmuits2">Text, Radios, Numbers</div>
+        </div>
+
+        <!-- start of questions -->
+        <!-- Question 1 -->
+        <div id="q1header">Question 1</div>
+        <div id="q1content">
+            <p>If I was to compare the first quarter of Mathematics for this grade to something, I would say the first quarter of Math for our entire journey. The topics <span>look so easy</span>, but they are <span>annoyingly difficult to grasp and master</span>. In case you have forgotten, our topics for Math for this quarter were <span>transformations</span>, such as <span>translation</span>, <span>rotation</span>, <span>dilation</span>, and <span>rotation</span>, and properties of different types of functions (<span>odd and even</span>, <span>multiplicities</span>, and etc).</p>
+            <p>What is <span>g(x)</span>, the <span>factored form</span> of the function of this polynomial if <span>reflected across the x-axis</span>?</p>
+            <p>f(x) = <span>x<sup>5</sup> + 6x<sup>4</sup> + 9x<sup>3</sup> - 4x<sup>2</sup> - 12x</span></p>
+            <p>Note: If you find exponents or multiplicities, write them as ^x, where x is the power, and the order of the factors doesn't matter. If a variable is not inside a binomial, enclose in parentheses. Example: (x)(x+3)^2(x+2)(x-3)^4.</p>
+            <img src = "../../images/quiz4-q1img.png">
+
+            <form name="form">
+                <label for="t4q1_answer">g(x) =</label>
+                <input type="text" id="t4q1_answer" oninput="textFormatRestoreFunction(this)"
+                    onblur="textValidationFunction(this)" />
+            </form>
+        </div>
+
+        <!-- Question 2 -->
+        <div id="q2header">Question 2</div>
+        <div id="q2content">
+            <p>Second quarter was one of the lighter quarters in my opinion, due to it only consisting of the <span>different types of parent functions there are</span> -- this does not mean that it was easy though, because there were so many of them. Examples of these are the <span>rational</span>, <span>radical</span>, and <span>piecewise</span> functions.</p>
+            <p>Before we delve into the difficult questions 3 and 4, a simple <span>exchange</span> between variables will be done. If the value of <span>n</span> is the <span>area of the values two standard deviations within from the mean in a standard normal distribution, divided by ten rounded off to the nearest whole number (sorry)</span>, then what is the <span>the index of the radical on the numerator</span> of the inverse of the function below?</p>
+            <img src = "../../images/quiz4-q2img.png">
+
+            <form name="form">
+                <input type="radio" class="novisible" id="q2noInputSelected" name="t4q2_answer" value="0" checked />
+                <input type="radio" name="t4q2_answer" value="square root" />square root<br>
+                <input type="radio" name="t4q2_answer" value="cube root" />cube root<br>
+                <input type="radio" name="t4q2_answer" value="fourth root" />fourth root<br>
+                <input type="radio" name="t4q2_answer" value="fifth root" />fifth root<br>
+            </form>
+        </div>
+
+        <!-- Question 3 -->
+        <div id="q3header">Question 3</div>
+        <div id="q3content">
+            <p>Third quarter was hard to get the gist of, but once you get it and it clicks, it just feels <span>bliss</span>. We concentrated on the concept of <span>power</span> -- its function forms, and its inverse as well. Topics include <span>exponential and logarithmic functions</span>, and <span>equations</span> involving these concepts as well.</p>
+            <p>What is the value of <span>x</span> in the equation below?</p>
+            <img src = "../../images/quiz4-q3img.png">
+
+            <form name="form">
+                <label for="t4q3_answer">x =</label>
+                <input type="number" id="t4q3_answer" oninput="textFormatRestoreFunction(this)"
+                    onblur="textValidationFunction(this)" />
+            </form>
+
+        </div>
+
+        <!-- Question 4 -->
+        <div id="q4header">Question 4</div>
+        <div id="q4content">
+            <p>For the last quarter of math, we were taught how to find the different properties of <span>sequences</span> -- the <span>first terms, common differences / ratios, and how we derived these equations to get a much better understanding of these lessons</span>. Before all that, we were taught to distinguish specific types of sequences from another sequence.</p>
+            <p>Find the sets of numbers that is <span>NOT a geometric or arithmetic sequence</span> below:</p>
+            <img src = "../../images/quiz4-q4img.png"></img>
+            <form name="form">
+                <input type="radio" class="novisible" id="q4noInputSelected" name="t4q4_answer" value="0" checked />
+                <input type="radio" name="t4q4_answer" value="I only" />I only<br>
+                <input type="radio" name="t4q4_answer" value="I and III only" />I and III only<br>
+                <input type="radio" name="t4q4_answer" value="I, II, and IV only" />I, II, and IV only<br>
+                <input type="radio" name="t4q4_answer" value="I, III, and IV only" />I, III, and IV only<br>
+            </form>
+        </div>
+
+        <!-- Question 5 -->
+        <div id="q5header">Question 5</div>
+        <div id="q5content">
+            <p>It must have been tough answering those four questions above, so here's a throwback to your <span>grade seven days</span>. A throwback to something so important yet many students don't fully understand due to the pandemic -- <span>factoring</span>.</p>
+            <p>Factor out <span>2x<sup>2</sup>+5x+2</span>, and give me <span>the value of n</span>, which is described as the <span>product of all of the numbers you see</span> in the factored equation, including the coefficients of the variable. </p>
+            
+            <form name="form">
+                <label for="t4q5_answer">n = </label>
+                <input type="number" id="t4q5_answer" oninput="textFormatRestoreFunction(this)"
+                    onblur="textValidationFunction(this)" />
+            </form>
+        </div>
+        <!-- end of questions for Quiz 1 -->
+        <div id="submitreset">
+            <form action="../quiz5/quiz5-index.html" onsubmit="return submitFunction()"
+                onreset="return resetFunction()">
+                <div id="dataContainer"><input type="submit" value="Finish Part 4" /></div>
+                <div id="dataContainer"><input type="reset" value="Reset Part 4" /></div>
+            </form>
+        </div>
+
+        <div id="navigationPage">
+            <form action="../submissionPage/unsubmittedChecker.html">
+                <div id="dataContainer"><input type="submit" value="Go to Submission Page (submit entire quiz)" /></div>
+            </form>
+        </div>
+
+        <div id="copyright">Webpage of RandomPersonQ, constructed April 30 - May 2, 2022 (c)</div>
+    </div>
+
+    <script src="quiz4-script.js"></script>
+</body>
+
+</html>

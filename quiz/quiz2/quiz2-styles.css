@@ -1,0 +1,467 @@
+* {
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+#submittedChecker {
+    font-size: large;
+    text-align: center;
+    color: red;
+}
+
+.novisible {
+    display: none;
+    position: absolute;
+}
+
+.poteCustomize {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(64,50,50,0.5);
+}
+
+#leftFiller {
+    /* basically the left side of the quiz */
+    position: fixed;
+    height: 100%;
+    width: 9%;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    background: rgb(172,131,131);
+    background: linear-gradient(180deg, rgba(172,131,131,1) 0%, rgba(145,104,104,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rightFiller {
+    /* basically the right side of the quiz */
+    position: fixed;
+    height: 100%;
+    width: 9%;
+    right: 0;
+    top: 0;
+    background: rgb(172,131,131);
+    background: linear-gradient(180deg, rgba(172,131,131,1) 0%, rgba(145,104,104,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navigationLeft {
+    background-color: rgb(152, 97, 97);
+    border: 2px rgb(117, 48, 48) solid;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.navigationLeft a{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    font-size: 300%;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navigationLeft:hover{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    background-color: rgb(135, 78, 78);
+}
+
+.navigationLeft:hover a{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    color: rgb(223, 213, 213);
+    font-size: 330%;
+    transition: ease 0.25s;
+}
+
+.navigationRight {
+    background-color: rgb(152, 97, 97);
+    border: 2px rgb(117, 48, 48) solid;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.navigationRight a{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    font-size: 300%;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navigationRight:hover{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    background-color: rgb(135, 78, 78);
+}
+
+.navigationRight:hover a{
+    /* arrow is a unicode so to edit them, I have to use css text manipulation */
+    color: rgb(223, 213, 213);
+    font-size: 330%;
+    transition: ease 0.25s;
+}
+
+span {
+    /* turns <span>ed tags to a dark green shade */
+    color: rgb(163, 21, 21);
+}
+
+body {
+    background: rgb(209, 191, 191);
+}
+
+#boxmodel {
+    /* text aspect of body */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* physical aspect of body */
+    background-color: transparent;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    /* text aspect of header */
+    font-size: large;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* physical aspect of header */
+    border-radius: 15px;
+    background: rgb(145, 79, 79);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+#title {
+    /* text aspect of title */
+    font-size: medium;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* physical aspect of title */
+    border-radius: 15px;
+    background: rgb(153, 105, 105);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#fmuitsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 15px;
+}
+
+#fmuits1 {
+    /* text aspect of "form methods used" header */
+    text-align: center;
+    font-weight: bold;
+    color: rgb(245, 245, 245);
+    /* physical aspect of "form methods used" header */
+    background-color: rgb(184, 73, 73);
+    padding: 5px;
+}
+
+#fmuits2 {
+    /* text aspect of "form methods used" box */
+    text-align: center;
+    font-weight: bold;
+    color: rgb(78, 99, 84);
+    /* physical aspect of "form methods used" box */
+    background-color: rgb(245, 245, 245);
+    padding: 5px;
+    align-items: center;
+}
+
+#pote {
+    position: sticky;
+    top: 20px;
+}
+
+#poteHeader {
+    /* text aspect of question one header */
+    font-weight: bold;
+    color: rgb(235, 230, 230);
+    /* physical aspect of question one header */
+    border: 1px solid white;
+    background: rgb(154, 63, 63);
+    padding: 5px;
+    padding-left: 2%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* to space out checkbox and title of PoTE */
+    display: flex;
+    justify-content: space-between;
+}
+
+#poteContent {
+    /* text aspect of question one content */
+    color: rgb(204, 222, 206);
+    text-align: justify;
+    /* physical aspect of question one content */
+    border: 1px solid white;
+    background: rgb(199, 122, 122);
+
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#poteContent img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#q1header {
+    /* text aspect of question one header */
+    text-indent: 2%;
+    font-weight: bold;
+    color: white;
+    /* physical aspect of question one header */
+    background: rgb(154,63,63);
+    background: linear-gradient(90deg, rgba(154,63,63,1) 0%, rgba(133,61,61,1) 50%, rgba(154,63,63,1) 100%);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#q1content {
+    /* text aspect of question one content */
+    color: rgb(234, 243, 235);
+    text-align: justify;
+    /* physical aspect of question one content */
+    text-indent: 2%;
+    background: rgb(199,122,122);
+    background: radial-gradient(circle, rgba(199,122,122,1) 0%, rgba(182,108,108,1) 100%);
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#q1content input {
+    margin-left: 1%;
+    width: 40%;
+}
+
+#q2header {
+    /* text aspect of question two header */
+    text-indent: 2%;
+    font-weight: bold;
+    color: white;
+    /* physical aspect of question two header */
+    background: rgb(154,63,63);
+    background: linear-gradient(90deg, rgba(154,63,63,1) 0%, rgba(133,61,61,1) 50%, rgba(154,63,63,1) 100%);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#q2content {
+    /* text aspect of question two content */
+    color: rgb(204, 222, 206);
+    text-align: justify;
+    /* physical aspect of question two content */
+    text-indent: 2%;
+    background: rgb(199,122,122);
+    background: radial-gradient(circle, rgba(199,122,122,1) 0%, rgba(182,108,108,1) 100%);
+    padding: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#q2content form {
+    text-indent: 0;
+}
+
+#q2content form input {
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+#q3header {
+    /* text aspect of question one header */
+    text-indent: 2%;
+    font-weight: bold;
+    color: white;
+    /* physical aspect of question one header */
+    background: rgb(154,63,63);
+    background: linear-gradient(90deg, rgba(154,63,63,1) 0%, rgba(133,61,61,1) 50%, rgba(154,63,63,1) 100%);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#q3content {
+    /* text aspect of question one content */
+    color: rgb(204, 222, 206);
+    text-align: justify;
+    /* physical aspect of question one content */
+    text-indent: 2%;
+    background: rgb(199,122,122);
+    background: radial-gradient(circle, rgba(199,122,122,1) 0%, rgba(182,108,108,1) 100%);
+    padding: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#q3content form {
+    text-indent: 0px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+}
+
+#q3content select { 
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#q4header {
+    /* text aspect of question two header */
+    text-indent: 2%;
+    font-weight: bold;
+    color: white;
+    /* physical aspect of question two header */
+    background: rgb(154,63,63);
+    background: linear-gradient(90deg, rgba(154,63,63,1) 0%, rgba(133,61,61,1) 50%, rgba(154,63,63,1) 100%);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#q4content {
+    /* text aspect of question two content */
+    color: rgb(204, 222, 206);
+    text-align: justify;
+    /* physical aspect of question two content */
+    text-indent: 2%;
+    background: rgb(199,122,122);
+    background: radial-gradient(circle, rgba(199,122,122,1) 0%, rgba(182,108,108,1) 100%);
+    padding: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#q4content form {
+    text-indent: 0;
+}
+
+#q4content form input {
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+#q5header {
+    /* text aspect of question five header */
+    text-indent: 2%;
+    font-weight: bold;
+    color: white;
+    /* physical aspect of question five header */
+        background: linear-gradient(90deg, rgba(154,63,63,1) 0%, rgba(133,61,61,1) 50%, rgba(154,63,63,1) 100%);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#q5content {
+    /* text aspect of question five content */
+    color: rgb(204, 222, 206);
+    text-align: justify;
+    /* physical aspect of question five content */
+    text-indent: 2%;
+    background: rgb(29,41,35);
+    background: rgb(199,122,122);
+    background: radial-gradient(circle, rgba(199,122,122,1) 0%, rgba(182,108,108,1) 100%);
+    padding: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#q5content input {
+    margin-left: 1%;
+    width: 40%;
+}
+
+#submitreset form {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+#submitreset form input {
+    color: rgb(232, 214, 214);
+    font-family: monospace;
+    width: 80%;
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 4px;
+    background-color: rgb(135, 28, 28);
+}
+
+#submitreset form input:hover {
+    background-color: rgb(150, 126, 126);
+}
+
+#navigationPage form {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+#navigationPage form input {
+    color: rgb(232, 214, 214);
+    font-family: monospace;
+    width: 60%;
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 4px;
+    background-color: rgb(135, 28, 28);
+}
+
+#navigationPage form input:hover {
+    background-color: rgb(150, 126, 126);
+}
+#copyright {
+    /* text aspect of copyright */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* physical aspect of copyright */
+    border-radius: 15px;
+    background-color: rgb(157, 30, 30);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+
+}

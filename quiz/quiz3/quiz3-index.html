@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grade 9 Lessons Refresher Quiz: Part 3">
+    <meta name="keywords" content="Physics, Phys, Difficult">
+    <meta name="author" content="RandomPersonQ">
+    <title>Physics: G9 Refresher Quiz Part 3</title>
+
+    <link rel="stylesheet" href="quiz3-styles.css">
+</head>
+
+<body onunload="progressSaverOnunload()" onload="progressSaverOnload(), submittedCheckerFunction()">
+    <!-- Hey, just a heads-up, most of my documentation is in the JS part of each webpage. This is because it is the most important and hardest part to understand. The parts in the HTML and CSS page is self-explanatory and only some parts required further elaboration in my opinion. -->
+    <div id="leftFiller"><div class = "navigationLeft"><a href = "../quiz2/quiz2-index.html">❰❰</a></div></div>
+    <div id="rightFiller"><div class = "navigationRight"><a href = "../quiz4/quiz4-index.html">❱❱</a></div></div>
+
+    <div id="boxmodel">
+        <div id="submittedChecker">STATUS: UNSUBMITTED -- please submit with the "Submit" button below</div>
+        <header>--- PHYSICS ---</header>
+
+        <div id="title">G9 Refresher Quiz Part 3: Kinematics, Projectile-matics, Gravitationatics, and all Kinds of Energatics</div>
+
+        <!-- "Form Methods Used in this Section" part -->
+        <div id="fmuitsContainer">
+            <div id="fmuits1">Form Methods Used in this Section</div>
+            <div id="fmuits2">Radios, Numbers, Checkboxes</div>
+        </div>
+
+        <!-- start of questions -->
+        <!-- Question 1 -->
+        <div id="q1header">Question 1</div>
+        <div id="q1content">
+            <p>The first quarter for Physics were pretty easy and introductory, compared to the next quarters that follow after it. We were taught the basics of <span>Newtonian physics</span> -- such as <span>force</span>, <span>motion graphs</span>, and <span>kinematics</span>.
+            <p>Find the <span>velocity of a runner just before he stops</span> after running for <span>7.5 seconds</span> for <span>7.5 m/s<sup>2</sup></span>. He started off at <span>3.5 m/s</span>. Round off to the nearest whole number. </p>
+
+            <form name="form">
+                <label for="t3q1_answer">Your answer is: </label>
+                <input type="number" id="t3q1_answer" oninput="textFormatRestoreFunction(this)"
+                    onblur="textValidationFunction(this)" /> m/s
+            </form>
+        </div>
+
+        <!-- Question 2 -->
+        <div id="q2header">Question 2</div>
+        <div id="q2content">
+            <p>For me, the hardest quarter for Physics is the <span>2nd quarter</span>. I just did not have enough foundation from the previous quarter because kinematics were really hard for me. In fact, this part of the quiz was <span>really hard</span> for me because if there's one thing harder than answering Physics questions, it's making them and at the same time having whole numbers in the end.</p>
+            <p>Your future self sends you a <span>cryptic message</span> in the form of a trebuchet which has the code to a secret message for the past. The instruction in the trebuchet tells you to shoot a <span>123.0 g</span> ball <span>70 degrees</span> at <span>49 m/s</span> at the top of a watchtower <span>500 meters above sea level</span>. The <span>maximum height</span> of the ball relative to sea level, in <span>m</span>, is the four digit code that will play a huge part in your, or perhaps the world's future.</p>
+            <p>What is the <span>four-digit code</span>? (xyz.a -> x-y-z-a)</p>
+
+            <form name="form">
+                <input type="radio" class="novisible" id="q2noInputSelected" name="t3q2_answer" value="0" checked />
+                <input type="radio" name="t3q2_answer" value="1-0-8-0" />1-0-8-0<br>
+                <input type="radio" name="t3q2_answer" value="6-0-8-0" />6-0-8-0<br>
+                <input type="radio" name="t3q2_answer" value="1-5-8-7" />1-5-8-7<br>
+                <input type="radio" name="t3q2_answer" value="6-5-8-7" />6-5-8-7<br>
+            </form>
+        </div>
+
+        <!-- Question 3 -->
+        <div id="q3header">Question 3</div>
+        <div id="q3content">
+            <p>Contrary to the second quarter, third quarter has been surprisingly easy. Recall the topics of <span>gravity, gravitation, and Kepler's planetary laws of motion</span>, <span> uniform circular motion</span>, <span>torque</span>, <span>rotational inertia</span>, and <span>center of mass</span>. </p>
+            <p><span>Gravity</span> is basically the acceleration you feel when you get near any object, it can be small or large.</p>
+            <p><span>UCM</span> is the part of physics that refers to the centripetal acceleration, velocities, normal forces, and etc. of uniformly rotating systems.</p>
+            <p><span>Torque</span> is the ability to apply more force by changing the location where the force is applied.</p>
+            <p><span>Rotational inertia</span> is the property of spinning objects to resist change in acceleration.</p>
+            <p>Okay, so <span>rotational inertia</span>. A conceptual, easy, break question: ignoring <span>air resistance and friction</span>, what reaches the ground faster, a <span>hollow cylinder</span> or a <span>solid cylinder</span>? </p>
+            <p>Hint: Remember what I said about checkboxes in the instructions page?</p>
+
+            <form name = "form">
+                <input type="checkbox" id="Hollow Cylinder" name="t3q3_answer" value="Hollow Cylinder"  />Hollow Cylinder<br>
+                <input type="checkbox" id="Solid Cylinder" name="t3q3_answer" value="Solid Cylinder" />Solid Cylinder<br>
+            </form>
+
+        </div>
+
+        <!-- Question 4 -->
+        <div id="q4header">Question 4</div>
+        <div id="q4content">
+            <p>Another topic from the second quarter is <span>obvious</span>. Haha, get it? <span>Apparent weight</span> differs from the real weight of a person because of <span>another force that also acts in the y-axis</span> that may change the net force of the acceleration of gravity thus affecting the weight of the person.</p>
+            <p>How heavy does a human feel when he or she has a mass of <span>57 kilograms</span> in an elevator in Mars <span>going up at 2 m/s<sup>2</sup></span>? Let's say that the gravity in Mars is <span>3.72 m/s<sup>2</sup></span>, and let's say that <span>rounding</span> does not exist on Mars.</p> 
+            <p></p>
+
+            <form name="form">
+                <label for="t3q4_answer">Your answer is: </label>
+                <input type="number" id="t3q4_answer" oninput="textFormatRestoreFunction(this)"
+                    onblur="textValidationFunction(this)" /> newtons
+            </form>
+        </div>
+
+        <!-- Question 5 -->
+        <div id="q5header">Question 5</div>
+        <div id="q5content">
+            <p>Fourth quarter physics is all about <span>energies</span>. Potential, kinetic, elastic potential, mechanical, and other energies that make up the <span>conservative forces</span>.</p>
+            <p>Let's say your past self <span>sends you back the trebuchet from Question 2</span> and it's all worn out. However, you re-read the instructions and you from the past changed it! "A new code can be revealed by shooting this <span>500-g</span> vintage-looking projectile <span>50 degrees to the horizontal</span> with a throw <span>200.0 m/s</span> fast, all at sea level".</p>
+            <p>Apparently the code is the <span>velocity of the ancient projectile before it hits the ground</span>. Find the <span>first four digits</span> of the code. (follow x-y-z-a formatting from Question 2)</p>
+            <form name="form">
+                <label for="t3q4_answer">Your answer is: </label>
+                <input type="text" id="t3q5_answer" oninput="textFormatRestoreFunction(this)"
+                    onblur="textValidationFunction(this)" />
+            </form>
+        </div>
+        <!-- end of questions for Quiz 1 -->
+        <div id="submitreset">
+            <form action="../quiz4/quiz4-index.html" onsubmit="return submitFunction()"
+                onreset="return resetFunction()">
+                <div id="dataContainer"><input type="submit" value="Finish Part 3" /></div>
+                <div id="dataContainer"><input type="reset" value="Reset Part 3" /></div>
+            </form>
+        </div>
+
+        <div id="navigationPage">
+            <form action="../submissionPage/unsubmittedChecker.html">
+                <div id="dataContainer"><input type="submit" value="Go to Submission Page (submit entire quiz)" /></div>
+            </form>
+        </div>
+
+        <div id="copyright">Webpage of RandomPersonQ, constructed April 28, 2022 (c)</div>
+    </div>
+
+    <script src="quiz3-script.js"></script>
+</body>
+
+</html>

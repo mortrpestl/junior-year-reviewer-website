@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grade 9 Lessons Refresher Quiz">
+    <meta name="keywords" content="Instructions, Question Formatting, and Registration Page">
+    <meta name="author" content="RandomPersonQ">
+    <title>G9 Lesson Refresher Quiz (Results)</title>
+
+    <link rel="stylesheet" href="results-styles.css">
+</head>
+
+<body>
+    <!-- Hey, just a heads-up, most of my documentation is in the JS part of each webpage. This is because it is the most important and hardest part to understand. The parts in the HTML and CSS page is self-explanatory and only some parts required further elaboration in my opinion. -->
+    <div id="leftFiller"></div>
+    <div id="rightFiller"></div>
+
+    <div id="boxmodel">
+        
+        <header>&gt;&gt;&gt; RESULTS AND RANKING &lt;&lt;&lt;</header>
+
+        <div id="title">Grade 9 Lessons Refresher Quiz</div>
+
+        <!-- Registration part of website -->
+        <div id="scoreHeader">Score</div>
+        <div id="scoreContent">
+            Your score is: <br>
+            <div id="score"></div>
+            <div id="individualScoring"></div>
+        </div>
+
+        <!-- Instructions part of website -->
+        <div id="rankingHeader">Ranking</div>
+        <div id="rankingContent">
+            
+        </div>
+
+        <!-- Question Formatting part of website -->
+        <div id="tryAgainHeader">Let your Friend Try!</div>
+        <div id="tryAgainContent">
+            I hope you had fun and relearned some concepts that you might have had forgotten from the school year! I worked really hard for this project and it was a fun ride as well. Remember that working hard is the key to success and education will take you to greater heights you've never seen before :>
+            <br><br>
+
+            <form action = "../index.html" onsubmit = "clearLocalStorage()">
+                <input type = "submit" value = "Press this button to try the quiz again!"></form>
+            </form>
+        </div>
+        
+        <div id="copyright">Webpage of RandomPersonQ, constructed May 4, 2022 (c)</div>      
+    </div>
+
+    <script src = "results-script.js"></script>
+</body>
+
+</html>
