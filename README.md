@@ -1,6 +1,6 @@
 # Junior Year Pop Quiz
 
-A quiz on varied subjects of my Junior high school year
+A quiz on varied subjects of my Junior high school year!
 
 ## Features:
 - a localStorage save state of your progress
