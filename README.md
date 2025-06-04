@@ -1,4 +1,4 @@
-# Junior Year Pop Quiz
+# Topic Mishmash Quiz (Junior)
 
 A quiz on varied subjects of my Junior high school year!
 
@@ -8,6 +8,26 @@ A quiz on varied subjects of my Junior high school year!
 - fun (but sometimes tricky) questions ;)
 
 ## Pictures of the Site:
+<p float="center">
+  <a href="https://github.com/mortrpestl/junior-year-reviewer-website/blob/main/site-screenshots/1.png">
+    <img src="https://raw.githubusercontent.com/mortrpestl/junior-year-reviewer-website/main/site-screenshots/1.png" width="49.45%" />
+  </a>
+  <a href="https://github.com/mortrpestl/junior-year-reviewer-website/blob/main/site-screenshots/2.png">
+    <img src="https://raw.githubusercontent.com/mortrpestl/junior-year-reviewer-website/main/site-screenshots/2.png" width="49.45%" />
+  </a>
+</p>
+
+<p float="center">
+  <a href="https://github.com/mortrpestl/junior-year-reviewer-website/blob/main/site-screenshots/3.png">
+    <img src="https://raw.githubusercontent.com/mortrpestl/junior-year-reviewer-website/main/site-screenshots/3.png" width="49.45%" />
+  </a>
+  <a href="https://github.com/mortrpestl/junior-year-reviewer-website/blob/main/site-screenshots/4.png">
+    <img src="https://raw.githubusercontent.com/mortrpestl/junior-year-reviewer-website/main/site-screenshots/4.png" width="49.45%" />
+  </a>
+</p>
+
+
+
 
 
 ## Software Used:
