@@ -1,4 +1,4 @@
-# Junior Year Reviewer Website
+# Junior Year Pop Quiz
 
 A quiz on varied subjects of my Junior high school year
 
